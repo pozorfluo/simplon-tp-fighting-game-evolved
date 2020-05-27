@@ -1,38 +1,71 @@
 :root {
-    --color-black: #374b4c;
-    --color-black-active: #3a4456;
-    --color-black-inactive: #5e7e7f;
-    --color-accent: #1ede8a;
-    --color-accent-light: #c0f5de;
-    --color-alt: #009aa0;
-    --color-alt-inactive: #00bf8f;
-    --color-white: #ffffff;
-    --color-off-white: #f6f6f8;
-    --color-alt-white: #f0f1f3;
-    --color-shadow: rgba(0, 34, 49, 0.15);
-    --color-limelight: rgba(255, 255, 255, 0.75);
-    --max-width: 75vw;
-  }
-  
-  * {
-    box-sizing: border-box;
-  }
+  --color-black: #212529;
+  --color-black-active: #3a4456;
+  --color-black-inactive: #5e7e7f;
+  --color-accent: #1ede8a;
+  --color-accent-light: #c0f5de;
+  --color-alt: #009aa0;
+  --color-alt-inactive: #00bf8f;
+  --color-white: #ffffff;
+  --color-off-white: #f6f6f8;
+  --color-alt-white: #f0f1f3;
+  --color-shadow: rgba(0, 34, 49, 0.15);
+  --color-limelight: rgba(255, 255, 255, 0.75);
+  --max-width: 75vw;
+}
+
+* {
+  box-sizing: border-box;
+}
 /*   
   html {
   }
    */
-  body {
-    min-height: 100vh;
-    max-width: var(--max-width);
-    margin: 2rem auto 0 auto;
-    background-color: var(--color-white);
-    background: linear-gradient(
-      0deg,
-      var(--color-off-white),
-      var(--color-alt-white)
-    );
-    color: var(--color-black);
-  }
-  
+body {
+  min-height: 100vh;
+  max-width: var(--max-width);
+  margin: 2rem auto 0 auto;
+  background-color: var(--color-white);
+  color: var(--color-black);
+}
 
-  
+h1 {
+  font-size: 2rem !important;
+}
+
+.ennemy {
+  /* display: flex; */
+  /* padding: 1rem 1.5rem !important; */
+  margin-top: 1rem !important;
+  margin-bottom: 2rem !important;
+  /* max-width: calc(var(--max-width) / 2);
+    min-width: 400px; */
+}
+
+.ennemy:hover {
+  background-color: var(--color-alt-white);
+  transform: scale3d(1.025, 1.025, 1);
+}
+a,
+a:hover,
+a:focus,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover,
+a:focus {
+  color: var(--color-accent);
+}
+/* .name {
+    font-size: 0.75rem !important;
+} */
+
+
+input[type=submit],
+input[type=button],
+input[type=reset],
+button{
+    margin-top: 1rem !important;
+    margin-bottom: 1rem !important;
+}

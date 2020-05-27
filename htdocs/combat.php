@@ -10,7 +10,8 @@ if (isset($_SESSION['perso'])) {
 // Si on a voulu créer un personnage.
 if (isset($_POST['creer']) && isset($_POST['nom'])) {
   // On crée un nouveau personnage.
-  $perso = new Personnage(['nom' => $_POST['nom']]); 
+//   $perso = new Personnage(['nom' => $_POST['nom']]); 
+  $perso = $manager->create(['nom' => $_POST['nom']], $_POST['creer']); 
   // Si le nom est invalide (string vide) on revoit une erreur
   if (!$perso->nomValide()) {
     $message = 'Le nom choisi est invalide.';
